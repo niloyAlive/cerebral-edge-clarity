@@ -13,7 +13,7 @@ const ServicesSection = () => {
       ]
     },
     {
-      title: "Data Product Development",
+      title: "Data Product Development", 
       badges: ["High Growth", "Reusability", "AI/ML Ready"],
       description: "Move beyond datasets to reusable, domain‐driven products with ownership, SLAs, and trust built‐in.",
       features: [
@@ -45,44 +45,44 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+    <section id="services" className="bg-gray-50 py-16">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Services
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base text-cerebral-text-gray max-w-3xl mx-auto">
             We help healthcare organizations build trustworthy, reusable data products on Snowflake.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            <div key={index} className="bg-white border border-gray-200 rounded-lg p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 {service.title}
               </h3>
               
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-1 mb-4">
                 {service.badges.map((badge, badgeIndex) => (
                   <Badge 
                     key={badgeIndex} 
                     variant="secondary" 
-                    className="bg-gray-100 text-gray-700 text-xs font-medium"
+                    className="bg-cerebral-gray text-gray-600 text-xs font-medium px-2 py-1"
                   >
                     {badge}
                   </Badge>
                 ))}
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-sm text-cerebral-text-gray mb-4 leading-relaxed">
                 {service.description}
               </p>
               
-              <ul className="space-y-3">
+              <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="text-gray-600 text-sm leading-relaxed flex items-start">
-                    <span className="text-cerebral-blue mr-2 mt-1">•</span>
+                  <li key={featureIndex} className="text-sm text-cerebral-text-gray leading-relaxed flex items-start">
+                    <span className="mr-2 mt-1">•</span>
                     {feature}
                   </li>
                 ))}

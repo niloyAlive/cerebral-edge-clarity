@@ -56,7 +56,8 @@ export default {
 					blue: 'hsl(var(--cerebral-blue))',
 					'blue-foreground': 'hsl(var(--cerebral-blue-foreground))',
 					gray: 'hsl(var(--cerebral-gray))',
-					'dark-gray': 'hsl(var(--cerebral-dark-gray))'
+					'dark-gray': 'hsl(var(--cerebral-dark-gray))',
+					'text-gray': 'hsl(var(--cerebral-text-gray))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

@@ -22,27 +22,27 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="bg-gray-50 py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+    <section id="contact" className="bg-white py-16">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Contact
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-base text-cerebral-text-gray">
             Ready to assess AI readiness or plan your Snowflake roadmap? Let's talk.
           </p>
         </div>
         
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-lg border border-gray-200 p-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">
               Request an Intro
             </h3>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="name" className="text-sm font-medium text-gray-700">
+                  <Label htmlFor="name" className="text-sm text-gray-700">
                     Name
                   </Label>
                   <Input
@@ -50,12 +50,13 @@ const ContactSection = () => {
                     name="name"
                     type="text"
                     required
-                    className="mt-2"
+                    className="mt-1"
+                    placeholder="Your name"
                   />
                 </div>
                 
                 <div>
-                  <Label htmlFor="company" className="text-sm font-medium text-gray-700">
+                  <Label htmlFor="company" className="text-sm text-gray-700">
                     Company
                   </Label>
                   <Input
@@ -63,13 +64,14 @@ const ContactSection = () => {
                     name="company"
                     type="text"
                     required
-                    className="mt-2"
+                    className="mt-1"
+                    placeholder="Your company"
                   />
                 </div>
               </div>
               
               <div>
-                <Label htmlFor="email" className="text-sm font-medium text-gray-700">
+                <Label htmlFor="email" className="text-sm text-gray-700">
                   Email
                 </Label>
                 <Input
@@ -77,12 +79,13 @@ const ContactSection = () => {
                   name="email"
                   type="email"
                   required
-                  className="mt-2"
+                  className="mt-1"
+                  placeholder="your@email.com"
                 />
               </div>
               
               <div>
-                <Label htmlFor="message" className="text-sm font-medium text-gray-700">
+                <Label htmlFor="message" className="text-sm text-gray-700">
                   Message
                 </Label>
                 <Textarea
@@ -90,20 +93,21 @@ const ContactSection = () => {
                   name="message"
                   rows={4}
                   required
-                  className="mt-2"
+                  className="mt-1"
+                  placeholder="What would you like to achieve?"
                 />
               </div>
               
               <Button 
                 type="submit"
-                className="w-full bg-cerebral-blue hover:bg-cerebral-blue/90 text-white py-3 text-base font-medium"
+                className="w-full bg-cerebral-blue hover:bg-cerebral-blue/90 text-white py-2.5 text-sm font-medium rounded-md"
               >
                 Send via Email
               </Button>
             </form>
             
             <div className="mt-6 text-center">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-cerebral-text-gray">
                 Send via Email{" "}
                 <a 
                   href="mailto:solutions@cerebral-edge.com" 
@@ -112,7 +116,7 @@ const ContactSection = () => {
                   solutions@cerebral-edge.com
                 </a>
               </p>
-              <p className="text-xs text-gray-400 mt-2">
+              <p className="text-xs text-cerebral-dark-gray mt-2">
                 This simple form opens your email client. No data is stored on this site.
               </p>
             </div>

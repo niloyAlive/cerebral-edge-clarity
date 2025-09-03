@@ -38,11 +38,12 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
     
-    /* CerebralEdge specific colors */
-    --cerebral-blue: 208 100% 47%;
+    /* CerebralEdge specific colors - from image */
+    --cerebral-blue: 210 100% 50%;
     --cerebral-blue-foreground: 0 0% 98%;
-    --cerebral-gray: 220 13% 91%;
-    --cerebral-dark-gray: 215.4 16.3% 46.9%;
+    --cerebral-gray: 210 14% 89%;
+    --cerebral-dark-gray: 210 8% 56%;
+    --cerebral-text-gray: 210 10% 40%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -91,10 +92,11 @@ All colors MUST be HSL.
     --ring: 208 100% 47%;
     
     /* CerebralEdge specific colors for dark mode */
-    --cerebral-blue: 208 100% 47%;
+    --cerebral-blue: 210 100% 50%;
     --cerebral-blue-foreground: 0 0% 98%;
     --cerebral-gray: 217.2 32.6% 17.5%;
     --cerebral-dark-gray: 215 20.2% 65.1%;
+    --cerebral-text-gray: 210 15% 70%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
